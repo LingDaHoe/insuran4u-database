@@ -4,6 +4,8 @@
 
 **URL**: [Project Home](#)
 
+This project is now fully unbranded and does not use any third-party branding or analytics.
+
 ## How can I edit this code?
 
 There are several ways of editing your application.

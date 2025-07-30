@@ -16,7 +16,7 @@ export const ProfileCard = ({ className = "", hideKPI = false }: ProfileCardProp
   const [userProfile] = useState({
     name: "Ahmad Zaki",
     initials: "AZ",
-    avatar: "/lovable-uploads/a01d5434-d3b5-4f60-ad0d-c47b5a2b2294.png",
+    avatar: undefined, // removed Loveable image
     branch: "Kuala Lumpur Central",
     department: "Sales & Marketing",
     kpiTarget: "RM 25,000",
@@ -53,7 +53,7 @@ export const ProfileCard = ({ className = "", hideKPI = false }: ProfileCardProp
           {/* Profile Section */}
           <div className="flex items-center gap-3">
             <Avatar className="h-6 w-6 border border-primary/20">
-              <AvatarImage src={userProfile.avatar} alt={userProfile.name} />
+              <AvatarImage src={userProfile.avatar || undefined} alt={userProfile.name} />
               <AvatarFallback className="bg-primary/10 text-primary font-semibold text-xs">
                 {userProfile.initials}
               </AvatarFallback>
